@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'product sans';
+}
+
+body {
+    height: 100vh;
+    background-color: #121212;
+    background-image: url(https://images.unsplash.com/photo-1468657988500-aca2be09f4c6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    margin-left: 18%;
+    color: #fff;
+    
+}
+
+.sidebar {
+    height: 100%;
+    width: 18%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+    background-color: rgb(241, 241, 241);
+}
+
+.links {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1em;
+}
+
+.links a {
+    color: #000;
+    text-decoration: none;
+}
+
+.sidebar li {
+    list-style-type: none;
+}
+
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 4px;
+    background: #861414;
+    transition: width .3s;
+    margin-bottom: 1em;
+}
+
+.cool-link:hover::after {
+    width: 2em;
+    transition: width .7s;
+}
+
+.namestuff {
+    margin-top: 10em;
+    margin-left: 3em;
+    margin-right: 18em;
+}
+
+.namestuff h1 {
+    font-size: 5em;
+}
+
+.namestuff h4 {
+    margin-top: 0.5em;
+    font-size: 1.15em;
+}
+
+.namestuff h4 a {
+    color: #fff;
+    text-decoration: underline #6699ee;
+}
+
+.namestuff h4 a:hover {
+    color: #6699ee;
+    transition: 0.3s;
+}
+
+.namestuff span {
+    color: #861414;
+}
+
+.woohoo:hover {
+    letter-spacing: 0.05em;
+}
+
+.woohoo {
+    transition: 0.5s;
+}
